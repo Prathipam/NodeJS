@@ -21,6 +21,12 @@ app.set('view Engine','jade');
 app.get('/',function(req,res){
     res.end("Hello World using express");
 });
+app.get('/angular',function(req,res){
+    res.end("Hello World using Angular JS");
+});
+app.get('/node',function(req,res){
+    res.end("Hello World using Node JS");
+});
 app.listen(8000,function(){
     console.log("Server running in PORT:8000");
 });
